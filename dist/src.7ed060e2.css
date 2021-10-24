@@ -1,0 +1,69 @@
+.comics__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comics__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin: var(--spacing-large);
+    transition: 0.5s;
+    background-color: var(--color-light);
+    cursor: pointer;
+}
+.comics__item:hover {
+    transform: rotate(-3deg) scale(0.95);
+    filter: saturate(150%);
+}
+.comics__name {
+    display: flex;
+    margin: auto;
+    padding: var(--spacing-small) var(--spacing-medium);
+}
+.comics__img {
+    width: 100%;
+}
+.border {
+    border: 5px solid blue;
+}
+:root {
+    --color-blue: #3199dc;
+    --color-dark: #222222;
+    --color-light: #f8f9fa;
+
+    --spacing-small: 10px;
+    --spacing-medium: 15px;
+    --spacing-large: 20px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark);
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    scrollbar-color: var(--color-blue) var(--color-dark);
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);
+    border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--color-dark);
+}
+
+/*# sourceMappingURL=/src.7ed060e2.css.map */

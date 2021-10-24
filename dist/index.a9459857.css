@@ -1,0 +1,94 @@
+._comics__container_d97485 {
+    display: flex;
+    flex-wrap: wrap;
+}
+._comics__item_d97485 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin: var(--spacing-large);
+    transition: 0.5s;
+    background-color: var(--color-light);
+    cursor: pointer;
+}
+._comics__item_d97485:hover {
+    transform: rotate(-3deg) scale(0.95);
+    filter: saturate(150%);
+}
+._comics__name_d97485 {
+    display: flex;
+    margin: auto;
+    padding: var(--spacing-small) var(--spacing-medium);
+}
+._comics__img_d97485 {
+    width: 100%;
+    
+}
+
+
+:root {
+    --color-blue: #3199dc;
+    --color-dark: #222222;
+    --color-light: #f8f9fa;
+
+    --spacing-small: 10px;
+    --spacing-medium: 15px;
+    --spacing-large: 20px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark);
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    scrollbar-color: var(--color-blue) var(--color-dark);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-dark);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.img-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+    -o-object-position: center;
+       object-position: center;
+}
+
+.img-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    -o-object-position: center;
+       object-position: center;
+}
+/*# sourceMappingURL=index.a9459857.css.map */
